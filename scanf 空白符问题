@@ -1,0 +1,27 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <stack>
+#include <cstring>
+#include <iostream>
+
+using namespace std;
+
+int main(void) {
+    int ival1 = 123, ival2 = 1;
+    char ch = 't';
+    while (true) {
+        printf("success1:%d\n", scanf("%d%d", &ival1, &ival2));
+        printf("success2:%d\n", scanf("%c", &ch));
+        printf("%d\n%d\n%c\n", ival1, ival2, ch);
+    }
+    /*
+     * try input:
+     * 2 1 回车
+     * 2 回车
+     * a 回车
+     * 2 回车 a
+     */
+    return 0;
+}
+
+一篇很好的博文：http://blog.csdn.net/delphiwcdj/article/details/6325386
